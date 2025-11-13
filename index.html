@@ -7,7 +7,7 @@
     <meta name = "viewport" content = "width = device-width, intial-scale = 1"/>
 
     <!-- references to styling -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href=""/>
 
     <!-- page title displayed in browser tab -->
@@ -21,6 +21,41 @@
             - navigation bar
             - placement of elements on index page (basic structure)
      -->
+    <!-- Your page content lives here -->
+    <div class="off-canvas-content" data-off-canvas-content>
+        <!-- main content within a `grid-container` -->
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+            </div>
+            <!-- `grid-x` represents a row -->
+            <div class="grid-x grid-padding-x">
+                <!--Vincent-->
+                <div class="cell large-auto" style="background-color: #ADD8E6;">
+                    <h1>test</h1>
+                    <p>test</p>
+                </div>
+                <!--Chim-->
+                <div class="cell large-auto" style="background-color: #90EE90;">
+                    <p>test</p>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <!--Jonathan-->
+                <div class="cell large-auto" style="background-color: #e6adad;">
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
 </body>
 
 </html>
