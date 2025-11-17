@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head> 
+  <head>
     <!-- meta tags for character encoding and responsive viewport -->
-    <meta charset = "utf-8"/>
-    <meta name = "viewport" content = "width = device-width, intial-scale = 1"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, intial-scale = 1" />
 
     <!-- references to styling -->
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href=""/>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="" />
 
     <!-- page title displayed in browser tab -->
     <title>Hunter's Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- 
         TODO:
 
@@ -23,30 +22,48 @@
      -->
     <!-- Your page content lives here -->
     <div class="off-canvas-content" data-off-canvas-content>
-        <!-- main content within a `grid-container` -->
-        <div class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
-            </div>
-            <!-- `grid-x` represents a row -->
-            <div class="grid-x grid-padding-x">
-                <!--Vincent-->
-                <div class="cell large-auto" style="background-color: #ADD8E6;">
-                    <h1>test</h1>
-                    <p>test</p>
-                </div>
-                <!--Chim-->
-                <div class="cell large-auto" style="background-color: #90EE90;">
-                    <p>test</p>
-                </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-                <!--Jonathan-->
-                <div class="cell large-auto" style="background-color: #e6adad;">
-                    <p>Contact</p>
-                </div>
-            </div>
+      <!-- main content within a `grid-container` -->
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <button
+            type="button"
+            class="cell large-auto button"
+            data-toggle="offCanvas"
+          >
+            Open Menu
+          </button>
         </div>
+        <!-- `grid-x` represents a row -->
+        <div class="grid-x grid-padding-x">
+          <!--Vincent-->
+          <div class="cell large-auto" style="background-color: #add8e6">
+            <h1>test</h1>
+            <p>test</p>
+          </div>
+          <!--About me-->
+          <div
+            class="cell large-auto"
+            style="background-color: #90ee90; padding: 1rem"
+          >
+            <h2>About Me</h2>
+            <p>
+              Hi, I'm Chim! I’m passionate about creative
+              coding. My portfolio highlights projects that combine technical
+              skill with design aesthetics. I enjoy building interactive
+              experiences.
+            </p>
+            <p>
+              Outside of coding, I’m interested in........ This site is a space to share my work, growth, and ideas.
+            </p>
+          </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+          <!--Jonathan-->
+          <div class="cell large-auto" style="background-color: #e6adad">
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- include before closing <body> tag -->
@@ -54,8 +71,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script type="application/javascript">
-        $(document).foundation();
+      $(document).foundation();
     </script>
-</body>
-
+  </body>
 </html>
