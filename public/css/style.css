@@ -1,3 +1,8 @@
+/* smooth scroll behavior for navigation */
+html {
+    scroll-behavior: smooth;
+}
+
 .resume{
     background-image: linear-gradient(to bottom right, rgb(143, 54, 191), rgb(0, 0, 0));
 }
@@ -51,5 +56,193 @@ body.home-page,
     width: 250px;
     height: 250px;
     object-fit: cover;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*----------------------------Navigation Bar Styling--------------------------------------*/
+/* dark mode navigation bar with purple accents */
+
+/* navigation container - dark background */
+.off-canvas-content > div:first-of-type,
+.nav {
+    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1b3d 100%); /* dark to purple gradient color */
+    padding: 1rem 0;
+    border-bottom: 2px solid #5a189a;
+    box-shadow: 0 2px 8px rgba(90, 24, 154, 0.3);
+    width: 100%;
+}
+
+/* navigation menu list */
+.horizontal.menu {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+/* navigation menu items */
+.horizontal.menu li {
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+/* navigation links - base styling */
+.horizontal.menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+/* navigation links - hover effect */
+.horizontal.menu a:hover {
+    color: #c77dff;
+    background-color: rgba(199, 125, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(199, 125, 255, 0.3);
+}
+
+/* navigation links - active/current page indicator */
+.horizontal.menu a:active,
+.horizontal.menu a:focus {
+    color: #e0aaff;
+    outline: 2px solid #9d4edd;
+    outline-offset: 2px;
+}
+
+/* purple accent underline on hover */
+.horizontal.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0); /* shifts elements up when hovered*/
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, #9d4edd, #c77dff);
+    transition: transform 0.3s ease;
+}
+
+.horizontal.menu a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* linkedIn logo styling in navigation */
+.horizontal.menu a img {
+    filter: brightness(0) invert(1); /* white text on black background */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    height: 1.2rem;
+    width: auto;
+    vertical-align: middle;
+}
+
+.horizontal.menu a:hover img {
+    opacity: 1;
+    filter: brightness(0) invert(1) drop-shadow(0 0 4px #c77dff);
+    transform: scale(1.1);
+}
+/*---------------------------------------------------------------------------------*/
+
+/*----------------------------Project Gallery Styling--------------------------------------*/
+/* dark mode project gallery with purple accents */
+
+/* project gallery page background */
+body.project-gallery-page,
+.project-gallery-page .off-canvas-wrapper,
+.project-gallery-page .off-canvas-content {
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+}
+
+/* project gallery container */
+.project-gallery-container {
+    padding: 2rem 0;
+    min-height: calc(100vh - 200px);
+}
+
+/* page header styling */
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: #c77dff; /* purple accent */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* project grid spacing */
+.project-grid {
+    margin-top: 1rem;
+}
+
+/* project card - dark mode styling */
+.project-card {
+    background: #151515;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+/* project card hover effect with purple glow */
+.project-card:hover {
+    border-color: #9d4edd;
+    box-shadow: 0 4px 16px rgba(157, 78, 221, 0.4);
+    transform: translateY(-4px);
+    text-decoration: none;
+}
+
+/* project card image */
+.project-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #1a1a1a;
+    display: block;
+    border-bottom: 2px solid #333;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-card-image {
+    border-bottom-color: #9d4edd;
+    filter: brightness(1.1);
+}
+
+/* project card content area */
+.project-card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #151515 0%, #1a1a1a 100%);
+}
+
+/* project card title */
+.project-card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e0e0e0;
+    margin: 0;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-card-title {
+    color: #c77dff; /* purple on hover */
 }
 /*---------------------------------------------------------------------------------*/
