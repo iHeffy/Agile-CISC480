@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags for character encoding and responsive viewport -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, intial-scale = 1" />
+
+     <!-- references to styling -->
+    <link rel="stylesheet" href="/public/css/foundation.css" />
+    <link rel="stylesheet" href="" />
+    
+    <!-- page title displayed in browser tab -->
+    <title>Hunter's Website</title>
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                 <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+
+    <!-- Your page content lives here -->
+     <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Navigation Menu -->
+        <div style="width: 100%; background-color: #f8f8f8; padding: 1rem 0; border-bottom: 1px solid #ddd;">
+            <div class="grid-container">
+                <ul class="horizontal menu" style="margin-bottom: 0; display: flex; justify-content: space-around; align-items: center;">
+                    <li><a href="/index.html">Home Page</a></li>
+                    <li><a href="/public/html/project-gallery.html">Project Gallery</a></li>
+                    <li><a href="/public/html/resume.html">Resume</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="../images/linkedin-logo/LI-Logo.png" alt="LinkedIn" style="height: 1.2em; width: auto; vertical-align: middle;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- main content within a `grid-container` -->
+        <div class="grid-container">
+            <!-- `grid-x` represents a row -->
+            <div class="grid-x grid-padding-x">
+
+                <!--Chim-->
+                <div class="cell large-6" style="background-color: #ADD8E6; padding: 1rem;">
+                    <h2><strong>Description</strong></h2>
+                    <p>
+                        This project explores the intersection of music, motion, and generative art by 
+                        transforming the webcam into a digital conducting tool. Using p5.js and 
+                        p5.sound, I designed a system where real‑time motion captured by the camera 
+                        controls both animated visuals and layered audio voices. Each animated object 
+                        on the canvas represents a “singer” in a virtual choir. As the conductor moves, 
+                        gestures are translated into musical parameters such as pitch, volume, and timbre, 
+                        while simultaneously influencing the size, color, and behavior of the visual elements.
+
+                    </p>
+                </div>
+
+
+                <!--Jonathan-->
+                <div class="cell large-auto text-center" style="background-color: #90ee90; padding: 1rem">
+                    <img src = "/public/images/Place-Holder.jpeg" alt = "SpongeBob">
+                </div>
+
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <!--Jonathan-->
+                <div class="cell large-auto" style="background-color: #ade6cf; text-align:center;">
+                    <h2><strong>Project Demo</strong></h2>
+                    <video controls>
+                        <source src="your-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <!--Chim-->
+                <div class="cell large-auto" style="background-color: #e6adad; padding: 1rem;">
+                        <h2><strong>Tech Stack</strong></h2>
+                        <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                            <li>HTML5 & CSS</li>
+                            <li>JavaScript</li>
+                            <li>p5.js & p5.sound (for generative visuals and audio-reactive logic)</li>
+                            <li>Git & GitHub (version control)</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            <div class="grid-x grid-padding-x">
+                <!--Jonathan-->
+                <div class="cell large-auto" style="background-color: #e6add2; text-align:center;">
+                    <h2><strong>Additional Images</strong></h2>
+                    <div style="display: flex; justify-content:center; gap: 100px;">
+                        <img src="/public/images/Place-Holder.jpeg" alt="Image 1" style="border-radius:8px;">
+                        <img src="/public/images/Place-Holder.jpeg" alt="Image 2" style="border-radius:8px;">
+                        <img src="/public/images/Place-Holder.jpeg" alt="Image 3" style="border-radius:8px;">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+      $(document).foundation();
+    </script>
+  </body>
+</html>
