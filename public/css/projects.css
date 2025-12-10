@@ -1,0 +1,54 @@
+.project1{
+        background-image: linear-gradient(to bottom right, rgb(143, 54, 191), rgb(0, 0, 0));
+}
+
+
+
+
+/*----------------------------Home page Styling--------------------------------------*/
+/* page background color  +  text color  +  text font */
+body.home-page, 
+.home-page .off-canvas-wrapper, 
+.home-page .off-canvas-content {
+    background-color: #0a0a0a;  
+    color: #f0f0f0;            
+    font-family: 'Arial';
+}
+
+/* Styles each section's backgrounds */
+.home-page .grid-padding-x > .cell {
+    background-color: #151515; 
+    border: 1px solid #333;
+    padding: 2rem !important;   /* keeps text inward/center  */   
+    border-radius: 8px;        
+}
+
+/* Styles the heading title's:  'About me' & 'Contact'  */
+.home-page h2 {
+    color: #c77dff; /* Pastel Neon Purple */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #5a189a; 
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* inside text color*/
+.home-page p {
+    color: #e0e0e0;  /* softer on eyes  */
+}
+ 
+/* styles text that are highlighted/bold:  text that uses <Strong> tag */
+.home-page strong {
+    color: #e0aaff; 
+}
+
+
+/* Styles the image */
+.home-page .cell img {
+    border-radius: 50%;       
+    border: 2px solid #9d4edd; 
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
